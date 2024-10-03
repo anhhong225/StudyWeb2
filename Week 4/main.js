@@ -146,7 +146,7 @@ Vue.component('product-review', {
     methods:{
         onSubmit(){
             this.errors = []
-            if(this.name && this.review && this,rating){
+            if(this.name && this.review && this.rating){
                 let productReview = {
                     name: this.name,
                     review: this.review,
