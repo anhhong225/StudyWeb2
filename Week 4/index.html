@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="product">
+            <div class="product-image">
+                <!--want data to be content of src
+                and data change -> src change -> v-bind-->
+                <img v-bind:src="image" :alt="Sock's image">
+            </div>
+            <div class="product-info">
+                <!--{{ }} is expression-->
+                <!--variable, operation, methods, condition-->
+                <h1>{{ product }}</h1>
+            </div>
+        </div>
+    </div>
+ <script src="main.js"></script>
+</body>
+</html>
